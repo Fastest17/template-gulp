@@ -1,0 +1,74 @@
+/* ------------------------------------------- */
+/* GLOBAL STYLES */
+/* ------------------------------------------- */
+
+*, *::before, *::after {
+	box-sizing: border-box!important;
+	outline: none;
+}
+
+* {
+	font-family: $f-open-sans;
+}
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	min-width: 320px;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+ol {
+	list-style: decimal;
+}
+
+li {
+	list-style: none;
+}
+
+a, input[type=button], input[type=submit] {
+	color: inherit;
+	text-decoration: none;
+	transition: all 250ms ease;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+embed,
+iframe,
+object,
+video {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+button {
+	box-shadow: none;
+	border: none;
+}
+
+b, strong {
+    font-weight: bold;
+}

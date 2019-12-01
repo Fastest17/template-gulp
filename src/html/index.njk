@@ -1,0 +1,15 @@
+{% set root = './' %}
+{% set pageTitle = "Title 1" %}
+
+{% extends "layout.tmpl.njk" %}
+{% block content %}
+
+  {# Header #}
+  {% include "blocks/header.tmpl.njk" %}
+
+  <p>HEllo</p>
+
+  {# Footer #}
+  {% include "blocks/footer.tmpl.njk" %}
+
+{% endblock %}
