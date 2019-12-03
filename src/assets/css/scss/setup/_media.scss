@@ -79,31 +79,3 @@
 // @include medium-size-max {
 //  properties
 // }
-
-
-// mixin for btn border radius
-//
-@mixin mix-btn-radius($btn-radius, $btn-line-height, $btn-font-size, $btn-padd, $btn-border-width) {
-  @if ($btn-radius == true) {
-    border-radius: (($btn-line-height * $btn-font-size) + ($btn-padd * 2) + ($btn-border-width * 2)) / 2;
-  } @else if (type-of($btn-radius) == 'number') {
-    border-radius: $btn-radius;
-  } @else {
-    border-radius: 0;
-  }
-}
-
-
-// MENU
-// Mixin for mobile-menu
-@mixin menu-size-max {
-  @media screen and (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin menu-size-min {
-  @media screen and (min-width: 1025px) {
-    @content;
-  }
-}
